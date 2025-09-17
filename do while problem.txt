@@ -1,0 +1,1748 @@
+
+
+do while problems 
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        int count=0;
+        do{
+            System.out.println("enter the number > 10");
+            count =sc.nextInt();
+        }while(count<10);
+        sc.close();
+    }
+}
+
+output;
+
+PS C:\Users\LENOVO\Desktop\bala> javac  Main.java
+PS C:\Users\LENOVO\Desktop\bala> java Main.java  
+enter the number > 10
+10
+PS C:\Users\LENOVO\Desktop\bala> 
+
+
+
+do while condition checking:
+
+class Main{
+    public static void main(String[] args) {
+        int i=1;
+        do{
+            System.out.println("i = "+i);
+            i++;
+        }while(i<=5);
+    }
+}
+
+
+do while use to calculate of sum of numbers :
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int i=1;
+        int sum=0;
+        do{
+            sum+=i;
+            i++;
+        }while(i<=5);
+        System.out.print("Sum of number "+sum);
+    }
+}
+
+
+options choices
+
+
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int choice;
+        do{
+            System.out.println("1.SayHello");
+            System.out.println("2.SayBye");
+            System.out.println("3.Exit");
+            choice=sc.nextInt();
+            switch (choice) {
+                case 1:
+                System.out.println("Hello!");
+                    break;
+                case 2:
+                System.out.println("Bye!");
+                    break;
+                     case 3:
+                System.out.println("Exit!");
+                    break;
+            
+                default:
+                System.out.println("invalid choice");
+            }
+        }while (choice!=3) ; 
+        }
+    }
+
+
+enter the number checking :
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int number;
+        do{
+            System.out.print("enter a number(0 to quit)");
+            number =sc.nextInt();
+            System.out.println("you entered " +number);
+        }while(number !=0);
+        System.out.println("program ended");
+        sc.close();
+    }
+}
+
+
+sum of positive number :
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int sum=0,number=0;
+        do{
+            sum+=number;
+            System.out.println("enter the number  : ");
+            number =sc.nextInt();
+        }while(number >=0);
+        System.out.println("sum " +sum );
+        sc.close();
+    }
+}
+
+
+guess the number :
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int secretNumber=3;
+        int guess;
+        do{
+            System.out.println("guss the number ");
+            guess=sc.nextInt();
+
+            if(guess != secretNumber){
+                System.out.println("wrong number .try again !");
+            }
+        }while(guess != secretNumber);
+        System.out.println("good you guss is correct");
+        sc.close();
+    }
+}
+
+
+100> number checking number :
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int count=0;
+        do{
+            System.out.println("enter the number > 100");
+            count=sc.nextInt();
+        }while(count<100);
+        sc.close();
+    }
+}
+
+
+passcode check:
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int passcode=1234;
+        int userInput;
+
+        do{
+            System.out.println("enter the passcode : ");
+            userInput=sc.nextInt();
+
+            if(passcode != userInput){
+                System.out.println("incorrect passcode ");
+            }
+        }while(userInput != passcode);
+        System.out.println("access granted ! ");
+        sc.close();
+    }
+}
+
+
+voteing check:
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int age;
+
+        do{
+            System.out.println("enter your age : ");
+            age=sc.nextInt();
+
+            if(age>=18){
+                System.out.println("you are eligible to vote ");
+            }else{
+                System.out.println("you are not eligible to vote ");
+            }
+            System.out.println("do you want to check again ( yes / no ) : ");
+            sc.nextLine();
+        }while(sc.nextLine().equalsIgnoreCase("yes"));
+        sc.close();
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int count=sc.nextInt();
+
+        do{
+            System.out.println("count is : "+count);
+            count++;
+        }while(count <= 5);
+        System.out.println("loop finished !");
+        sc.close();
+    }
+}
+
+
+sum of the positive number is :
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int number;
+        int sum=0;
+
+        do{
+            System.out.println("enter the positive number ( or a negative number  to stop )");
+            number =sc.nextInt();
+            if(number>0){
+                sum +=number;
+            }
+        }while(number >=0);
+        System.out.println("sum of positive number entered :"+sum);
+        sc.close();
+    }
+}
+
+game menu creation:
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char choice;
+
+        do{
+            System.out.println("\nGame menu :");
+            System.out.println("play (p)");
+            System.out.println("quit (q)");
+            System.out.println("enter your choice: ");
+
+            choice=sc.next().charAt(0);
+            switch (choice) {
+                case 'p':
+                    System.out.println("game started!");
+                    break;
+                case 'q':
+                    System.out.println("quitting game .");
+                    break;
+                default:
+                    System.out.println("invalid choice. place enter 'p' or 'q' .");
+            }
+        }while(choice !='q');
+        sc.close();
+    }
+}
+
+break statement :
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+
+        for(int i=1;i<=n;i++){
+            if(i==7){
+                break;
+            }System.out.println(i);
+        }
+    }
+}
+
+break :
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        boolean t=true;
+        first : {
+            second : {
+                third :{
+                    System.out.println("before break statement");
+                    if(t){
+                        break second;
+                    }
+                    System.out.println("this won't execute.");
+                }
+                System.out.println("this won't execute.");
+            }
+           System.out.println("afer second block.");
+        }
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the day");
+        int day=sc.nextInt();
+
+        switch (day) {
+            case 1:
+                System.out.println("monday");
+                break;
+            case 2:
+                System.out.println("tuesday");
+                break;
+            case 3:
+                System.out.println("wednesday");
+                break;
+            case 4:
+                System.out.println("thursday");
+                break;
+            case 5:
+                System.out.println("friday");
+                break;
+            case 6:
+                System.out.println("saturday");
+                break;
+            case 7:
+                System.out.println("sunday");
+            default:
+                System.out.println("invalid day");
+        }
+    }
+}
+
+
+class Main{
+    public static void main(String[] args) {
+        int i=1;
+        while(i<=10){
+            if(i==6){
+                break;
+            }
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        for(int i=1;i<=3;i++){
+            for(int j=1;j<=3;j++){
+                if(j==2){
+                    break;
+                }
+                System.out.println("i= "+i +" j=" +j);
+            }
+        }
+    }
+}
+
+
+
+outer break :
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        outerLoop:
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (i * j > 10) {
+                    System.out.println("Breaking out: i = " + i + ", j = " + j);
+                    break outerLoop;
+                }
+                System.out.println("i = " + i + ", j = " + j + ", product = " + (i * j));
+            }
+            System.out.println("Inner loop finished for i = " + i);
+        }
+        System.out.println("Outer loop finished!");
+    }
+}
+
+
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        int i = 1, j = 1;
+        while(i <= 3) {
+            System.out.println("outer looping " + i);
+            while(j <= 3) {
+                System.out.println("inner loop iteration " + j);
+                j++;
+            }
+            j = 1;
+            i++;
+        }
+    }
+}
+
+
+continue statement in java:
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        for(int i=0;i<10;i++){
+            System.out.print(i +" ");
+            if(i%2==0) continue;
+            System.out.println(" ");
+        }
+    }
+}
+
+
+
+
+class Main{
+    public static void main(String[] args) {
+        int i=0;
+        while(i<10){
+            i++;
+            if(i==6){
+                continue;
+            }
+            System.out.print(i + " ");
+        }
+    }
+}
+
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        //Scanner sc=new Scanner(System.in);
+        for(int i=1;i<=3;i++){
+            for(int j=1;j<=3;j++){
+                if(i==j){
+                    continue;
+                }
+                System.out.println(i +" " +j);
+            }
+        }
+    }
+}
+
+
+
+import java.util.*;
+class Main{
+    public static int add(int a,int b){
+        return a+b;
+    }
+    public static void printMessage(String message){
+        System.out.print(message);
+        return;
+    }
+    public static void main(String[] args) {
+        int sum=add(5,3);
+        System.out.println("the sum is:"+sum);
+        printMessage("hello,world!");
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public int square(int number){
+        return number*number;
+    }
+    public static void main(String[] args) {
+        Main obj=new Main();
+        int result=obj.square(5);
+        System.out.println("squre of 5 is" +result);
+    }
+}
+
+
+
+public class Main {
+
+    int calculateRemainingMoney(int salary) {
+        int savingAmount = 12000;
+        int foodCost = 5000;
+        int movieCost = 2000;
+        int otherExpenses = 8000;
+
+        int totalExpenses = savingAmount + foodCost + movieCost + otherExpenses;
+        int remaining = salary - totalExpenses;
+
+        return remaining;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        int salary = 200000;
+        int remainingMoney = obj.calculateRemainingMoney(salary);
+
+        System.out.println("Salary: " + salary);
+        System.out.println("Saving Amount: 12000");
+        System.out.println("Food Cost: 5000");
+        System.out.println("Movie Cost: 2000");
+        System.out.println("Other Expenses: 8000");
+        System.out.println("Remaining Money: " + remainingMoney);
+    }
+}
+
+
+
+
+import java.util.*;
+public class Main{
+    String getname(){
+        return "guhan";
+}
+String getaddress(){
+    return "ush erode guhan";
+}
+String getnumber(){
+    return "999999999";
+}
+public static void main(String[] args) {
+    Main obj=new Main();
+
+    String name=obj.getname();
+    String address=obj.getaddress();
+    String number =obj.getnumber();
+
+    System.out.println(name);
+    System.out.println(address);
+    System.out.println(number);
+}
+}
+
+
+
+public class Main{
+static int myMethod(int x){
+        return 5 + x;
+    }
+    public static void main(String[] args) {
+        System.out.println(myMethod(7));
+    }
+}
+
+
+
+class Main{
+    void calc(int a,int b){
+        int res=(a+b)/10;
+        System.out.println(res);
+    }
+    public static void main(String[] args){
+        new Main().calc(5, 5);
+        System.out.println("no retuen keword is used ");
+    }
+}
+
+
+class Main{
+    double avg(double x,double y){
+        double res=(x+y)/2.0;
+        return res;
+    }
+    public static void main(String[] args) {
+        System.out.println(new Main().avg(2.5, 7.5));
+    }
+}
+
+
+class Main{
+    void demo(double v){
+        if(v<0){
+            System.out.println(v);
+            return;
+        }else{
+            ++v;
+        }
+    }
+    public static void main(String[] args) {
+        new Main().demo(-1);
+        System.out.println("progem is ending");
+    }
+}
+
+
+public class Main{
+    static int valume(int length,int breath,int height){
+        int vol=length*breath*height;
+        return vol;
+    }
+    public static void main(String[] args) {
+        System.out.println("calculation the volume :");
+        int voluems=valume(10, 6, 2);
+        System.out.println(voluems);
+    }
+}
+
+//methods type problem
+
+
+class Main{
+    public static void main(String[] args) {
+        double num1=15.5;
+        double num2=20.3;
+
+        System.out.println("\nMath operations:");
+        System.out.println("max:" +Math.max(num1,num2));
+        System.out.println("min" +Math.min(num1,num2));
+        System.out.println("Square "+Math.sqrt(25));
+        System.out.println("power "+Math.pow(2,3));
+        System.out.println("Random number :"+Math.random());
+    }
+}
+
+// Math methodes in java
+
+public class Main{
+    String color;
+
+    public Main(String c){
+        color =c;
+    }
+    public void displayColor(){
+        System.out.println("the car color is :"+color);
+    }
+    public static void main(String[] args){
+        Main mycar=new Main("red"); 
+        mycar.displayColor();
+    }
+}
+// instance methods
+
+
+public class Main{
+    public static int Sumofdigits(int number){
+        number =Math.abs(number);
+        int sum=0;
+        while(number>0){
+            sum+=number%10;
+            number /=10;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        System.out.println("sum of digits "+Sumofdigits(123));
+        System.out.println("sum of digits "+Sumofdigits(2345));
+    }
+}
+
+//  methodes function  used to calculation sum of digits:
+
+
+public class Main{
+    public static boolean istwodigit(int number){
+        if(number<0){
+            number =-number;
+        }if(number >=10 && number <=99){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println(istwodigit(25));
+        System.out.println(istwodigit(5));
+    }
+}
+
+// another type 
+
+public class Main{
+    public static boolean istow(int number){
+        number =Math.abs(number);
+        return number>10 && number<99;
+    }
+    public static void main(String[] args) {
+        System.out.println(istow(100));
+    }
+}
+
+// Methods calling in java
+
+class Add {
+    int s = 0;
+
+    public int addTwoInt(int a, int b) {
+        s = a + b;
+        return s;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Add a = new Add();
+        int res = a.addTwoInt(1, 2);
+        System.out.println(res);
+    }
+}
+
+// type of the Methods
+import java.util.*;
+class Test{
+    public static int i=0;
+    Test(){
+        i++;
+    }
+    public static int get(){
+        return i;
+    }
+    public int m1(){
+        System.out.println("INSIDE THE METHODE 1 ");
+        this.m2();
+        return i;
+    }
+    public void m2(){
+        System.out.println("INSIDE METHODE 2");
+    }
+}
+    public class Main{
+    public static void main(String[] args) {
+
+        Test obj=new Test();
+        int i=obj.m1();
+        System.out.println("no "+i);
+        int o=Test.get();
+        System.out.println("NO OF INSTANCE CREATED "+o);
+    }
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        int x=10;
+        increment(x);
+        System.out.println(x);
+    }
+    public static void increment(int num){
+        ++num;
+        System.out.println(num);
+    }
+}
+// passing primitive types
+
+import java.util.Arrays;
+
+public class Main{
+    public static void main(String[] args) {
+        int[] arr={1,2,3};
+        modifArray(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void modifArray(int[] array){
+        array =new int[]{5,6,7};
+    }
+}
+//passing referanes types
+
+class Main{
+    public static void greet(String name,int age){
+        System.out.println("hello "+name+",you are "+age+ " year old");
+    }
+    public static void main(String[] args) {
+        greet("guhan", 23);
+    }
+}
+// type 2 parameter passing
+
+ class Person{
+    String name;
+}
+public class Main{
+    public static void changeName(Person p) {
+        p.name="Ush";
+     }
+    public static void main(String[] args) {
+        Person person=new Person();
+        person.name="Guhan ";
+        changeName( person); 
+        System.out.println(person.name);
+    }
+}
+// type 2 referance metod in java
+
+public class Main{
+    public int add(int a,int b){
+        int sum=a+b;
+        return sum;
+    }
+    public static void main(String[] args) {
+        Main obj=new Main();
+        int result=obj.add(2, 7);
+        System.out.println(result);
+    }
+}
+//memory allocation in method
+
+public class Main{
+    private int num;
+    private String n;
+
+    public int getnumber(){
+        return num;
+    }
+    public String getname(){
+        return n;
+    }
+    public void setnumber(int num){
+        this.num=num;
+    }
+    public void setname(String n){
+        this.n=n;
+    }
+    public void printDetails(){
+        System.out.println(num);
+        System.out.println(n);
+    }
+    public static void main(String[] args) {
+        Main obj=new Main();
+        obj.setname("guhan ");
+        obj.setnumber(18);
+        obj.printDetails();
+    }
+}
+
+
+memory allocation in java
+
+
+class Main{
+    void hello(){
+        System.out.println("this is user defined method");
+    }
+    public static void main(String[] args){
+        Main obj=new Main();
+        obj.hello();
+    }
+}
+
+// user defined methods 
+
+public class Main{
+    public static void main(String[] args){
+        Main obj=new Main();
+        System.out.println(obj.hashCode());
+    }
+}
+
+// callind predefined methods
+
+
+import java.util.*;
+public class Main{
+    static int a=40;
+    int b=50;
+
+    void simpleDisplay(){
+        System.out.println(a);
+        System.out.println(b);
+    }
+    static void  staticDisplay(){
+        System.out.println(a);
+    }
+    public static void main(String[] args) {
+        Main obj=new Main();
+        obj.simpleDisplay();
+        staticDisplay();
+    }
+}
+
+//static method cannot called access instance variable
+import java.util.*;
+public class Main{
+    static int num=100;
+    static String str="guhan";
+
+    static void display(){
+        System.out.println("static number "+num);
+        System.out.println("static String "+str);
+    }
+    void nonstatic(){
+        display();
+    }
+    public static void main(String[] args) {
+        Main obj=new Main();
+        obj.nonstatic();
+        display();
+    }
+}
+
+//static methods accessed from both static and non static methods
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Main obj=new Main();
+        obj.disp();
+        System.out.println("hello");
+    }
+    void disp(){
+        int a=20;
+        System.out.println(a);
+    }
+}
+
+//calling instance method
+
+public class Main{
+    private String message="hello guhan";
+
+    public void sayHello(){
+        System.out.println(message);
+    } 
+    public static void main(String[] args) {
+        Main obj=new Main();
+        obj.sayHello();
+    }
+}
+
+//void instance methods without parameter
+
+public class Main{
+    private int count=0;
+    public int getCount(){
+        return count;
+    }
+    public void increment(){
+        count++;
+    }
+    public static void main(String[] args){
+        Main counter=new Main();
+        counter.increment();
+        counter.increment();
+        System.out.println(counter.getCount());
+    }
+}
+
+//void instance method without parameter
+
+
+import java.util.*;
+class class1{
+    void add(){
+        int a=2;
+        int b=3;
+
+        System.out.println("the sum of 2 and 3 "+(a+b));
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        class1 obj=new class1();
+        obj.add();
+        System.out.println("good");
+    }
+}
+//instance methode without parameter 
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Main obj=new Main();
+        obj.add(2,3);
+        System.out.println("Hello!");
+    }
+    void add(int a,int b){
+        int x=a;
+        int y=b;
+        int z=x+y;
+
+        System.out.println("sum of "+z);
+    }
+}
+
+// instance methode with parameter
+
+
+import java.util.*;
+class account{
+    private int balance=50;
+
+    public int getBalance(){
+        return balance;
+    }
+    public void setBalance(int a){
+        balance +=a;
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        account obj=new account();
+        obj.setBalance(50);
+        System.out.println("your Balance is "+obj.getBalance());
+        System.out.println("good!");
+    }
+}
+
+
+//accessor and mutator methods **end to upload in github
+
+
+class BanckAccount{
+    private double balance;
+
+    public  BanckAccount(double initialBalance){
+        balance=initialBalance;
+    }
+    public void deposit(double amount){
+        balance +=amount;
+    }
+    public boolean withdraw(double amount){
+        if(amount <= balance){
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+    public double getBalance(){
+        return balance;
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        BanckAccount account=new BanckAccount(100.0);
+        account.deposit(20);
+        account.withdraw(30);
+        System.out.println("current balance is "+account.getBalance());
+    }
+}
+
+//business  logic methodes 
+
+
+import java.util.Scanner;
+
+class BanckAccount {
+    private double balance;
+
+    public BanckAccount(double initialBalance) {
+        balance = initialBalance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public boolean withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter initial balance: ");
+        double initialBalance = scanner.nextDouble();
+
+        BanckAccount account = new BanckAccount(initialBalance);
+
+        System.out.print("Enter amount to deposit: ");
+        double depositAmount = scanner.nextDouble();
+        account.deposit(depositAmount);
+
+        System.out.print("Enter amount to withdraw: ");
+        double withdrawAmount = scanner.nextDouble();
+        boolean success = account.withdraw(withdrawAmount);
+
+        if (success) {
+            System.out.println("Withdrawal successful.");
+        } else {
+            System.out.println("Insufficient balance.");
+        }
+
+        System.out.println("Current balance is " + account.getBalance());
+
+        scanner.close();
+    }
+}
+
+// amount deposit and withdraw check using method %%
+
+
+//public (most permissive )
+class student{
+    public String name;
+
+    public void display(){
+        System.out.println("Name : "+name);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        student obj=new student();
+        obj.name="guhan";
+        obj.display();
+    }
+}
+
+//access modifiers in java public 
+
+
+class Person {
+    protected int age;
+
+    protected void setAge(int age) {
+        this.age = age;
+    }
+}
+
+public class Main extends Person {
+    void printAge() {
+        setAge(30);
+        System.out.println("Age is: " + age);
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.printAge();
+    }
+}
+
+
+// Create access modifier in protected in java ......
+  
+
+class BankAccount {
+    double balance;
+
+    BankAccount(double balance) {
+        this.balance = balance;
+    }
+
+    void deposit(double amount) {
+        balance += amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+class Customer {
+    private String name;
+    private BankAccount account;
+
+    public Customer(String name, double initialBalance) {
+        this.name = name;
+        this.account = new BankAccount(initialBalance);
+    }
+
+    public void makedeposit(double amount) {
+        account.deposit(amount);
+    }
+
+    public void printBalance() {
+        System.out.println(name + " balance is: $" + account.getBalance());
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Customer customer = new Customer("guhan", 10000.0);
+        customer.makedeposit(500.0);
+        customer.printBalance();
+    }
+}
+
+
+//default (package-private) accss modifier in java '''''''
+ 
+class Main{
+    private int privateField=10;
+
+    private void privateMethod(){
+        System.out.println("private menber");
+
+
+    }
+    public void accessProvateMembers(){
+        System.out.println("access privateField "+privateField);
+        privateMethod();
+    }
+    public static void main(String[] args) {
+        Main o=new Main();
+        o.accessProvateMembers();  
+    }
+}
+ 
+private access modifier in java  ,,,,,,
+
+
+class person{
+    private String name;
+
+    public void setName(String newName){
+        if(newName != null && !newName.isEmpty()){
+            name=newName;
+        }
+    }
+    public String getName(){
+        return name;
+    }
+    private void logNameChange(){
+        System.out.println("name change to "+name);
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        person p=new person();
+        p.setName("gushan");
+        System.out.println("Name "+p.getName());
+    }
+}
+
+example 2 in private access modifier in jAVA ////
+
+
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("number of arguments "+args.length);
+        for(int i=0;i<args.length;i++){
+            System.out.println("arguments "+ i +": "+ args[i]);
+        }
+    }
+}
+
+
+// command line arguiments in java
+
+C:\Users\LENOVO\Desktop\bala>javac Main.java
+
+C:\Users\LENOVO\Desktop\bala>java Main hello guhan ush 9
+number of arguments 4
+arguments 0: hello
+arguments 1: guhan
+arguments 2: ush
+arguments 3: 9
+
+C:\Users\LENOVO\Desktop\bala>
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Command line arguments are:");
+        for (String arg : args) {
+            System.out.println(arg);
+        }
+    }
+}
+
+
+command line argument in java using for each loop in java ,,,.,.,,..,
+
+
+public class Main{
+    public static void main(String[] args) {
+        if(args.length<2){
+            System.out.println("please provide two number");
+            return;
+        }
+        int a= Integer.parseInt(args[0]);
+        int b= Integer.parseInt(args[1]);
+        int  sum=a+b;
+        System.out.println("sum "+sum);      
+    }
+}
+
+command line argument in java use to calculate sum of two number
+
+
+class Main{
+    public static void main(String[] args) {
+        if(5>2){
+            System.out.println("TRUE");
+            System.out.println("INSIDE THE IF BLOCK");
+        }
+        System.out.println("OUTSIDE THE IF BLOCK");
+    }
+}
+
+CURLY BRACES AND INDENTATION IN JAVA
+
+class Main{
+    public static void main(String[] args){
+        final int X=10;
+
+        if(X > 10){
+            System.out.println("FAILED");
+        }else{
+            System.out.println("SUCCESSFUL DEMONSTRATION " +" OF KEYWORD");
+        }
+    }
+}
+
+keywords in java
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int a=10;
+        int b=3;
+
+        String n1="18";
+        String n2="19";
+
+        int a1=Integer.parseInt(n1);
+        int b1=Integer.parseInt(n2);
+
+        System.out.println("a+b="+(a+b));
+        System.out.println("a-b="+(a-b));
+        System.out.println("a*b="+(a*b));
+        System.out.println("a/b="+(a/b));
+        System.out.println("a%b="+(a%b));
+        System.out.println("a1+b1="+(a1+b1));
+    }
+}
+
+arithmetic operators;
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int a=10;
+        int b=10;
+
+        System.out.println("postincrement "+(a++));
+        System.out.println("preincrement "+(++a));
+
+        System.out.println("postdecrement "+(b--));
+        System.out.println("predecrement "+(--b));
+    }
+}
+
+unary operators 
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int a=9;
+
+        System.out.println(a+=3);
+        System.out.println(a-=2);
+        System.out.println(a*=2);
+        System.out.println(a/=2);
+        System.out.println(a%=2);
+        System.out.println(a &=0b1010);
+        System.out.println(a |=0b1000);
+        System.out.println(a ^=0b1000);
+        System.out.println(a <<=0b1110);
+        System.out.println(a >>=0b1000);
+        System.out.println(a >>>=0b1011);
+    }
+}
+
+Assignment operators
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int a=10;
+        int b=17;
+        int c=10;
+
+        System.out.println(a>b);
+        System.out.println(a<b);
+        System.out.println(a==c);
+        System.out.println(a>=b);
+        System.out.println(a<=b);
+        System.out.println(a!=c);
+    }
+}
+
+relational operators
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        boolean x=true;
+        boolean y=false;
+
+        System.out.println("x&&y: " +(x&&y));
+        System.out.println("x||y: " +(x||y));
+        System.out.println("!x :"+(!x));
+
+    }
+}
+logical operators
+
+class Main{
+    public static void main(String[] args) {
+        int a=20,b=10,c=30,result;
+
+        result=((a>b) ? (a>c) ? a:c:(b>c) ? b:c);
+
+        System.out.println("Max number is "+result);
+    }
+}
+
+ternary operators
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int d=0b1010;
+        int e=0b1100;
+
+        System.out.println("d&e :"+(d&e));
+        System.out.println("d|e :"+(d|e));
+        System.out.println("d|e :"+(d^e));
+        System.out.println("~d :"+(~d));
+        
+    }
+}
+
+bitwise operators
+
+ public class Main{
+    public static void main(String[] args) {
+         boolean b1=true;
+         boolean b2=false;
+
+         System.out.println("is java fun!"+b1);
+         System.out.println("is gushan "+b2);
+    }
+}
+
+boolean data types in java
+
+  
+
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the num1 :");
+        int num1=sc.nextInt();
+        System.out.println("enter the num2:");
+        int num2=sc.nextInt();
+
+        double sum=num1+num2;
+        double sub=num1-num2;
+        double mul=num1*num2;
+        double div=num1/num2;
+        double mod=num1%num2;
+
+        System.out.println("add of two number"+sum);
+        System.out.println("differn of two number "+sub);
+        System.out.println("multie of two number "+mul);
+        System.out.println("division of two number"+div);
+        System.out.println("modules of two number "+mod);
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the num1 :");
+        int num1=sc.nextInt();
+        System.out.println("enter the num2:");
+        int num2=sc.nextInt();
+        
+        System.out.println("num1 >num2"+(num1 > num2));
+        System.out.println("num1 <num2"+(num1 < num2));
+        System.out.println("num1 <=num2"+(num1 <= num2));
+        System.out.println("num1 >=num2"+(num1 >= num2));
+        System.out.println("num1 !=num2"+(num1 != num2));
+        System.out.println("num1 == num2"+(num1 == num2));
+    }
+}
+
+relational operation
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int a=10,b=20,c=20,d=0;
+
+        System.out.println("var1="+a);
+        System.out.println("var2="+b);
+        System.out.println("var3="+c);
+
+        if((a<b) && (b==c)){
+            d=a+b+c;
+            System.out.println("the sum is : "+d);
+        }else{
+            System.out.println("false conditions");
+        }
+    }
+}
+
+logical operatiors  and && operators 
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int a=10,b=20,c=20,d=10;
+
+        System.out.println("var1="+a);
+        System.out.println("var2="+b);
+        System.out.println("var3="+c);
+        System.out.println("var4="+d);
+        if((a<b) || (c==d)){
+            System.out.println("one are both condition are true");
+        }else{
+            System.out.println(" both conditional are false conditions");
+        }
+    }
+}
+
+or || operators 
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        boolean a=true;
+        boolean b=false;
+
+        System.out.println("a ="+a);
+        System.out.println("b ="+b);
+
+        System.out.println("a&&b: "+(a&&b));
+        System.out.println("a||b: "+(a||b));
+        System.out.println("!a ="+!a);
+        System.out.println("!b ="+!b);
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int n1=5,n2=10,max;
+
+        System.out.println("first number is "+n1);
+        System.out.println("secound number is "+n2);
+
+        max=(n1>n2) ? n1:n2;
+
+        System.out.println("Max is "+max);
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int a=5;
+        int b=7;
+
+        System.out.println("a&b ="+(a&b));
+        
+        System.out.println("a | b ="+(a|b));
+
+        System.out.println("a^b ="+(a^b));
+
+        System.out.println("~a ="+(~a));
+        
+    }
+}
+
+
+bitwise operators
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int   a=1;
+        int b=8;
+
+        System.out.println("a&b ="+(a&b));
+        
+        System.out.println("a | b ="+(a|b));
+
+        System.out.println("a^b ="+(a^b));
+
+        System.out.println("~a ="+(~a));
+        System.out.println("~b ="+(~b));
+    }
+}  
+
+
+boolean in if statement in java
+
+class Main{
+    public static void main(String[] args) {
+        
+        boolean a=true;
+        boolean b=false;
+
+        if(a){
+            System.out.println("a is true ");
+        }else{
+            System.out.println("a is not true");
+        }
+        if(b){
+            System.out.println("b is not false");
+        }else{
+            System.out.println("b is false");
+        }
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("ENTER YOUR AGE");
+        int a=sc.nextInt();
+        System.out.println("ENTER YOUR BLOOD LEVEL");
+        double w=sc.nextDouble();
+
+        if(a>=18){
+            if(w>=50.0){
+                System.out.println("donate your blood");
+            }else{
+                System.out.println("not donate the blood for whight");
+            }
+        }else{
+            System.out.println("you are not 18");
+        }
+    }
+}
+
+blood donation system using nesteed if 
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("ENTER THE SCORE");
+        int score=sc.nextInt();
+
+        switch(score){
+            case 80:
+            System.out.println("A");
+            break;
+            case 70:
+            System.out.println("B");
+            break;
+            case 60:
+            System.out.println("C");
+            break;
+            case 50:
+            System.out.println("D");
+            break;
+            default:
+            System.out.println("F");
+        }
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+         
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the date:");
+        int day=sc.nextInt();
+
+        switch(day){
+            case 1:
+            System.out.println("sunday");
+            break;
+
+            case 2:
+            System.out.println("monday");
+            break;
+
+            case 3:
+            System.out.println("thusday");
+            break;
+
+            case 4:
+            System.out.println("weansday");
+            break;
+
+            case 5:
+            System.out.println("thursday");
+            break;
+
+            case 6:
+            System.out.println("friday");
+            break;
+
+            case 7:
+            System.out.println("saturday");
+            break;
+
+            default:
+            System.out.println("enter the valid date");
+        }
+    }
+}
+
+
+
+class Main{
+    public static void main(String[] args) {
+        for(int i=1;i<=3;i++){
+            for(int j=1;j<=3;j++){
+                System.out.print(i*j+" ");
+            }System.out.println();
+        }
+    }
+}
+
+

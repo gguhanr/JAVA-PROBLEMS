@@ -38,7 +38,7 @@ These programs focus on analyzing and manipulating integer data.
 | **16** | **Pornic Number** | *(Note: This seems to be a custom or non-standard term. Clarification/Correction needed, or implement based on local definition.)* |
 | **17** | **Weird Number Check** | *(Note: Implement based on the definition of a "Weird Number" in mathematics - an abundant number that is not semiperfect.)* |
 
-### ⚙️ Digits, Loops & Math
+### ⚙️ Digits, Loops & Math..
 
 Programs focused on digit manipulation and essential utility functions.
 

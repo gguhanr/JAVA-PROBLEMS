@@ -10,7 +10,7 @@ This repository serves as a structured collection of fundamental to intermediate
 
 ---
 
-## 📚 Program Index
+## 📚 Program Index..
 
 The exercises are categorized for easier navigation and learning progression.
 

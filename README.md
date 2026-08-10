@@ -8,7 +8,7 @@ This repository serves as a structured collection of fundamental to intermediate
 * **Algorithms:** Implement common algorithms related to numbers (prime, factorial, GCD, LCM) and strings (palindrome).
 * **Problem-Solving:** Tackle practical exercises and mini-projects.
 
----
+---  
 
 ## 📚 Program Index..
 
